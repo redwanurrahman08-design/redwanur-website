@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contact — REDWANUR</title>
+  <meta name="description" content="Contact REDWANUR. Join VIP early access." />
+
+  <link rel="icon" type="image/jpeg" href="assets/profile-white.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="REDWANUR Home">
+        <div class="brand-mark">
+          <img src="assets/profile-white.jpeg" alt="REDWANUR logo">
+        </div>
+        <div class="brand-name">REDWANUR</div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="collections.html">Collections</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="right">
+        <a class="btn btn-dark" href="#vip">Join VIP</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collections.html">Collections</a>
+      <a href="#vip">Join VIP</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="reveal">
+            <div class="eyebrow">CONTACT</div>
+            <h1 class="h2">Collaborations & inquiries</h1>
+            <p class="p">For collaborations, wholesale, and inquiries, contact us below.</p>
+
+            <div class="grid">
+              <div class="card">
+                <div class="card-title">VIP Email</div>
+                <div class="card-text">redwanur.vip.bd@gmail.com</div>
+              </div>
+
+              <div class="card">
+                <div class="card-title">Launch payments</div>
+                <div class="card-text">Bangladesh launch: <strong>bKash</strong>. Worldwide soon.</div>
+              </div>
+
+              <div class="card">
+                <div class="card-title">Social</div>
+                <div class="card-text">Add your Facebook/Instagram links anytime.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-luxe reveal" id="vip">
+            <div class="card-title">Join VIP Early Access</div>
+            <div class="card-text">Sends directly to our VIP inbox.</div>
+
+            <form data-vip-form style="margin-top:14px;">
+              <div class="form-row">
+                <input class="input" name="name" placeholder="Your name" required>
+                <input class="input" name="email" placeholder="Email address" type="email" required>
+                <input class="input" name="phone" placeholder="Phone (optional)">
+                <input class="input" name="city" placeholder="City (optional)">
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-dark" type="submit">Join VIP</button>
+                <span style="font-size:12px; color:rgba(0,0,0,.60);" data-status></span>
+              </div>
+
+              <div class="small">DESIGNED IN BANGLADESH • WORLDWIDE SOON</div>
+            </form>
+
+            <div class="hr"></div>
+
+            <div class="eyebrow">FAQ</div>
+            <div style="margin-top:12px;">
+              <details>
+                <summary>When is the launch?</summary>
+                <p>VIP members get the first announcement and purchase link.</p>
+              </details>
+              <details>
+                <summary>How will payment work in Bangladesh?</summary>
+                <p>bKash will be supported at launch. More options can be added later.</p>
+              </details>
+              <details>
+                <summary>Will it be worldwide?</summary>
+                <p>Yes. Bangladesh first, then worldwide soon after operations are perfect.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <div class="footer-brand">REDWANUR</div>
+        <div class="small">DESIGNED IN BANGLADESH • WORLDWIDE SOON</div>
+      </div>
+      <div style="color:rgba(0,0,0,.60); font-size:12px;">
+        © <span id="year"></span> REDWANUR.
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Preview">
+      <div class="lightbox-top">
+        <div class="lightbox-title" id="lightboxTitle">PREVIEW</div>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+      </div>
+      <div class="lightbox-media">
+        <img id="lightboxImg" alt="Preview image">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
